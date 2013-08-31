@@ -1,6 +1,10 @@
 ;;; cole.el --- Summary:
 ;;; Commentary:
 ;;; Code:
+(provide 'cole)
+
+;;; Let's use a real font, yo.
+(set-face-attribute 'default nil :font "Monaco-13")
 
 ;;; Tomorrow is today
 (add-to-list 'load-path "~/.emacs.d/themes/")
@@ -13,7 +17,6 @@
 
 ;; fuck off, menu bar
 (setq menu-bar-mode nil)
-(provide 'cole)
 
 ;; Remap M-right and M-left in org mode
 (require 'org)
